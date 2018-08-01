@@ -1,5 +1,9 @@
 # My first program was to print the string "hello world"
 
-Variable_1 = "hello world"
+list = ["h","e","l","l","o"," ","w","o","r","l","d"]
+i = 1
+String = ""
+while i <= len(list):
+    string += string + list[i]
 
-print(Variable_1)
+print(string)
