@@ -37,11 +37,11 @@ def main():
                 else:
                     flag = 1
                 j = j + 1
-            if max_freq < (j-i):
+            if max_freq <= (j-i):
                 max_freq = j-i
                 start = i
                 end = j
-        print(str1[start:end+1])
+        print(str1[start:end])
     else:
         print(str1)
 
