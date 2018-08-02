@@ -7,7 +7,7 @@ def main():
     for var_character in var_input:
         if var_character == "a" or var_character == "e" or var_character == "i" or var_character == "o" or var_character == "u":   # THIS LINE IS TO CHECK WHETHER THERE ARE ANY VOWELS. 
             var_count += 1       # ITERATION STEP IF LOOP IS EXECUTED.
-    print("Number of vowels:", var_count)    # PRINT STATEMENT
+    print(var_count)    # PRINT STATEMENT
 
 main()
 
