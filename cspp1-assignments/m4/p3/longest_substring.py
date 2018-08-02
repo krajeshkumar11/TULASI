@@ -39,7 +39,6 @@ def main():
                 j = j + 1
             
             if max_freq < (j-i):
-            
                 max_freq = j-i
                 start = i
                 end = j
