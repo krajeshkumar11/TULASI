@@ -26,25 +26,27 @@ def main():
             count += 1
     
     if(len(str1) != count):
+        
         for i in range(len(str1)):
+            count2 = 0
             flag = 0
             j = i
             a = str1[j]
-            while j <= (len(str1)-1) and flag == 0:
-                if j == len(str1)-1:
-                    j = j + 1
-                elif str1[j] <= str1[j+1]:
+            while j < (len(str1)-1) and flag == 0:
+                
+                if str1[j] <= str1[j+1]:
                     a += str1[j+1]
-                    j = j + 1
+                    count2 += 1
                 else:
                     flag = 1
-                    j = j + 1
+                j = j + 1
             
-            if max_freq <= (j-i):
-                max_freq = j-i
+            if max_freq <= count2:
+                max_freq = count2
                 start = i
-                end = j
-        print(str1[start:end])
+                end = i + max_freq
+                print(end)
+        print(str1[start:end+1])
     else:
         print(str1)
 
