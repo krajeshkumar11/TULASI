@@ -15,39 +15,27 @@ If you've spent more than a few hours on this problem, we suggest that you move 
 If you have time, come back to this problem after you've had a break and cleared your head.'''
 
 def main():
-    str1 = input()
-    a = ""
-    max_freq = 0
+    s = input()
+    temp_start = 0
     start = 0
+    count = 0
     end = 0
-    count = 1
-    for i in range(len(str1)-1):
-        if str1[i] <= str1[i+1]:
+    max_count=0
+    for i in range(len(s)-1):
+        if s[i]<=s[i+1]:
             count += 1
-    if(len(str1) != count):
-        for i in range(len(str1)):
-            flag = 0
-            j = i
-            a = str1[j]
-            while j < (len(str1)-1) and flag == 0:
-                if str1[j] <= str1[j+1]:
-                    a += str1[j+1]
-                else:
-                    flag = 1
-                j = j + 1
-
-            if max_freq < (j-i):
-                max_freq = j-i
-                start = i
-                end = j
-        print(str1[start:max_freq])
-    else:
-        print(str1)
+        else:
+            count = 0
+        if max_count < count:
+            max_count = count
+            temp_start = i
+    start = temp_start - max_count + 1
+    print(s[start:start+max_count+1])
 
 main()
+          
 
-                
-        
-                
 
             
+          
+	
