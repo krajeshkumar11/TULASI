@@ -20,22 +20,30 @@ def main():
     max_freq = 0
     start = 0
     end = 0
-    for i in range(len(str1)):
-        flag = 0
-        j = i
-        a = str1[j]
-        while j < (len(str1)-1) and flag == 0:
-            
-            if str1[j] <= str1[j+1]:
-                a += str1[j+1]
-            else:
-                flag = 1
-            j = j + 1
-        if max_freq < (j-i):
-            max_freq = j-i
-            start = i
-            end = j
-    print(str1[start:end])
+    count = 1
+    for i in range(len(str1)-1):
+        if str1[i] <= str1[i+1]:
+            count += 1
+    print(count)
+    if(len(str1) != count):
+        for i in range(len(str1)):
+            flag = 0
+            j = i
+            a = str1[j]
+            while j < (len(str1)-1) and flag == 0:
+                
+                if str1[j] <= str1[j+1]:
+                    a += str1[j+1]
+                else:
+                    flag = 1
+                j = j + 1
+            if max_freq < (j-i):
+                max_freq = j-i
+                start = i
+                end = j
+        print(str1[start:end])
+    else:
+        print(str1)
 
 main()
 
