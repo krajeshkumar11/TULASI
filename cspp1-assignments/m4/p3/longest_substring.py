@@ -26,14 +26,13 @@ def main():
             count += 1
     
     if(len(str1) != count):
-        
         for i in range(len(str1)):
             flag = 0
             j = i
             a = str1[j]
             count2 = 0
             while j < (len(str1)-1) and flag == 0:
-                count2 = 0
+                count2 = 0    
                 if str1[j] <= str1[j+1]:
                     a += str1[j+1]
                     count2 += 1
@@ -41,12 +40,11 @@ def main():
                     flag = 1
                 j = j + 1
             
-            if max_freq <= count2:
+            if max_freq < count2:
                 max_freq = count2
                 start = i
-                end = i + max_freq
-                
-        print(str1[start:end+1])
+                end = i + count2
+        print(str1[start:end])
     else:
         print(str1)
 
