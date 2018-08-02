@@ -15,18 +15,18 @@ If you've spent more than a few hours on this problem, we suggest that you move 
 If you have time, come back to this problem after you've had a break and cleared your head.'''
 
 def main():
-    str = input("Enter string")
+    str1 = input()
     a = ""
     max_freq = 0
     start = 0
     end = 0
-    for i in range(len(str)):
+    for i in range(len(str1)):
         flag = 0
         j = i
-        a = str[j]
-        while j < (len(str)-1) and flag == 0:
-            if str[j] <= str[j+1]:
-                a += str[j+1]
+        a = str1[j]
+        while j < (len(str1)-1) and flag == 0:
+            if str1[j] <= str1[j+1]:
+                a += str1[j+1]
             else:
                 flag = 1
             j = j + 1
@@ -34,7 +34,7 @@ def main():
             max_freq = j-i
             start = i
             end = j 
-    print(str[start:end])
+    print(str1[start:end])
 
 main()
 
