@@ -41,7 +41,7 @@ def main():
                 max_freq = j-i
                 start = i
                 end = j
-        print(str1[start:end])
+        print(str1[start:end+1])
     else:
         print(str1)
 
