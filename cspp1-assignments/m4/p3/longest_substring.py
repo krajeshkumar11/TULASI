@@ -30,21 +30,20 @@ def main():
             flag = 0
             j = i
             a = str1[j]
-            count2 = 0
             while j < (len(str1)-1) and flag == 0:
-                   
+                
                 if str1[j] <= str1[j+1]:
                     a += str1[j+1]
-                    count2 += 1
                 else:
                     flag = 1
                 j = j + 1
             
-            if max_freq < count2:
-                max_freq = count2
+            if max_freq <= (j-i):
+            
+                max_freq = j-i
                 start = i
-                end = i + count2
-        print(str1[start:end])
+                end = j
+        print(str1[start:max_freq])
     else:
         print(str1)
 
