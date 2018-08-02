@@ -8,7 +8,7 @@ def main():
     s = input()
     count = 0
     for i in range(len(s)):
-        if i < (len(s)-3):
+        if i <= (len(s)-3):
                 a = s[i:i+3]
                 if a == "bob":
                         count += 1
