@@ -5,10 +5,12 @@
 #Number of vowels: 5
 
 def main():
-	s = raw_input()
-	# the input string is in s
-	# remove pass and start your code here
-	pass
+    s = input()
+    x = ["a","e","i","o","u"]
+    count = 0
+    for i in s:
+        if i in x:
+            count += 1
+    print(count)
 
-if __name__== "__main__":
-	main()
+main()
