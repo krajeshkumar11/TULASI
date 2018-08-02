@@ -32,7 +32,7 @@ def main():
             a = str1[j]
             count2 = 0
             while j < (len(str1)-1) and flag == 0:
-                count2 = 0    
+                   
                 if str1[j] <= str1[j+1]:
                     a += str1[j+1]
                     count2 += 1
