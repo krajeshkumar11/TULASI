@@ -38,7 +38,7 @@ def main():
                     flag = 1
                 j = j + 1
             
-            if max_freq <= (j-i):
+            if max_freq < (j-i):
             
                 max_freq = j-i
                 start = i
