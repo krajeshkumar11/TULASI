@@ -24,10 +24,9 @@ def main():
         flag = 0
         j = i
         a = str1[j]
-        while j <= (len(str1)-1) and flag == 0:
-            if j == (len(str1)-1):
-                j = j + 1
-            elif str1[j] <= str1[j+1]:
+        while j < (len(str1)-1) and flag == 0:
+            
+            if str1[j] <= str1[j+1]:
                 a += str1[j+1]
             else:
                 flag = 1
