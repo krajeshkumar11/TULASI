@@ -19,12 +19,12 @@ def main():
     temp_i = 0
     start = 0
     count = 0
-    end = 0
+    
     max_count=0
     for i in range(len(s)-1):
         if s[i]<=s[i+1]:
             count += 1
-            i += 1
+            
         else:
             count = 0
         if max_count < count:
