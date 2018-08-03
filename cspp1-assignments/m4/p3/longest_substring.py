@@ -16,7 +16,7 @@ If you have time, come back to this problem after you've had a break and cleared
 
 def main():
     s = input()
-    temp_start = 0
+    temp_i = 0
     start = 0
     count = 0
     end = 0
@@ -24,12 +24,13 @@ def main():
     for i in range(len(s)-1):
         if s[i]<=s[i+1]:
             count += 1
+            i += 1
         else:
             count = 0
         if max_count < count:
             max_count = count
-            temp_start = i
-    start = temp_start - max_count + 1
+            temp_i = i
+    start = temp_i - max_count + 1
     print(s[start:start+max_count+1])
 
 main()
