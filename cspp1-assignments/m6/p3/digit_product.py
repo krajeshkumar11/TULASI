@@ -10,11 +10,14 @@ def main():
     '''
     int_input = int(input())
     if int_input < 0:
-        int_input = -int_input
+        int_input1 = -int_input
     product = 1
-    string_input = str(int_input)
+    string_input = str(int_input1)
     for i in string_input:
         product = product * int(i)
-    print(product)
+    if int_input < 0 and product != 0:
+        print("-" + str(product))
+    else:
+        print(product)
 if __name__ == "__main__":
     main()
