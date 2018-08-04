@@ -1,25 +1,35 @@
-#Guess My Number Exercise
-
+"""
+Guess My Number Exercise.
+"""
+#function
 def main():
-    print("Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
-    a = input("Enter a number between 0 and 100:")
-    l = 0
-    h = 100
-    ans = (l + h)//2
-    print(ans)
-    a1 = input("Enter either of h,l,c:")
-    while a1 != "c":
-        if a1 == "l":
-            l = ans
-            ans = (l+h)//2
-            print(ans)
-            a1 = input("Is your secret number"+str(ans)+"?"+"If not Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
+    print("Enter 'VAR_H' to indicate the guess is too high.")
+    print("Enter 'VAR_L' to indicate the guess is too low.")
+    print("Enter 'VAR_C' to indicate I guessed correctly.")
+    var_a = input("Enter a number between 0 and 100:")
+    var_l = 0
+    var_h = 100
+    var_ans = (var_l + var_h)//2
+    print(var_ans)
+    var_a1 = input("Enter either of VAR_H,VAR_L,VAR_C:")
+    while var_a1 != "var_c":
+        if var_a1 == "var_l":
+            var_l = var_ans
+            var_ans = (var_l+var_h)//2
+            print(var_ans)
+            print("Is your secret number"+str(var_ans)+"?")
+            print("If not Enter 'VAR_H' to indicate the guess is too high.")
+            print("Enter 'VAR_L' to indicate the guess is too low.")
+            print("Enter 'VAR_C' to indicate I guessed correctly.")
+            var_a1 = input("Enter either of VAR_H,VAR_L,VAR_C:")
         else:
-            h = ans
-            ans = (l+h)//2
-            print(ans)
-            a1 = input("Is your secret number"+str(ans)+"?"+"If not Enter 'h' to indicate the guess is too high. Enter 'l' to indicate the guess is too low. Enter 'c' to indicate I guessed correctly.")
-    
-    print("Your guessed number is:",ans)
-
+            var_h = var_ans
+            var_ans = (var_l+var_h)//2
+            print(var_ans)
+            print("Is your secret number"+str(var_ans)+"?")
+            print("If not Enter 'VAR_H' to indicate the guess is too high.")
+            print("Enter 'VAR_L' to indicate the guess is too low.")
+            print("Enter 'VAR_C' to indicate I guessed correctly.")
+            var_a1 = input("Enter either of VAR_H,VAR_L,VAR_C:")
+    print("Your guessed number is:", var_a)
 main()
