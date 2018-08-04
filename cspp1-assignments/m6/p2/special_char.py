@@ -11,8 +11,9 @@ def main():
     str_output = ""
     array_check = ["!","@","#","$","%","^","&","*"]
     for i in range(len(str_input)):
-        if i in array_check:
-            str_output = str_input[:i] + " " + str_input[i + 1:]
+        temp_i = i
+        if str_input[i] in array_check:
+            str_output += str_input[:i] + " " + str_input[i + 1:]
             
     print(str_output)
 
