@@ -29,7 +29,6 @@ def payingdebtoffinayear(var_balance, var_annualinterestrate, var_monthlypayment
     This takes balance, annual interest rate, monthly payment rate
     """
     for var_i in range(12):
-        var_i = 2
         var_pb = var_balance
         var_mir = (var_annualinterestrate)/12.0
         var_mmp = var_monthlypaymentrate * var_pb
