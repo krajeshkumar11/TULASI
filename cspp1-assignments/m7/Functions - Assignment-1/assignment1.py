@@ -44,6 +44,6 @@ def main():
     payingDebtOffInAYear(data[0],data[1],data[2])
 
 if __name__== "__main__":
-    for i in range(12):
-         main()
+    # for i in range(12):
+    main()
 
