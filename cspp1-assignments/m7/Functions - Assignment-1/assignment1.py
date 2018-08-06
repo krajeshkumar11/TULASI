@@ -36,7 +36,7 @@ def payingdebtoffinayear(var_balance, var_annualinterestrate, var_monthlypayment
         var_mup = var_pb - var_mmp
         var_balance = var_mup + (var_mir * var_mup)
         var_balance = round(var_balance, var_i)
-        print(var_balance)
+    print("Remaining balance: " + str(var_balance))
 def main():
     """
     This is program is to call the main function
