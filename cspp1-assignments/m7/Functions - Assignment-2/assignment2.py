@@ -22,15 +22,16 @@
 # Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 
 def payingDebtOffInAYear(balance, annualInterestRate):
-    var_epsilon = 0.005
-    var_guess = 0.0
-    var_a = (balance - 12*var_guess) + (balance - var_guess)*((annualInterestRate/12)**12)
-    print(var_a)
+
+    var_guess  = 0.0
+    var_a = 1
     var_step = 0.01
-    while var_a >= var_epsilon:
-        var_a = (balance - 12*var_guess) + (balance - var_guess)*((annualInterestRate/12)**12)
-        var_guess += var_step
-    print(var_guess)
+    while var_a != balance:
+        var_a = (balance - var_guess) + (balance - var_guess)*(annualInterestRate/12)
+        var_a = (balance -var_a)/100
+        if var_a =:
+            break
+    print(int(var_guess))
             
 def main():
     data = input()
