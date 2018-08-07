@@ -17,7 +17,7 @@ def main():
     """
     This function is to call the factorial function.
     """
-    var_a = input()    
+    var_a = input()
     print(factorial(int(var_a)))
 if __name__ == "__main__":
     main()
