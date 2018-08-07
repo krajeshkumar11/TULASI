@@ -10,7 +10,9 @@ def factorial(var_n):
 
     returns: a positive integer, the factorial of n.
     '''
-    if var_n == 1:
+    if var_n == 0:
+        return 1
+    elif var_n == 1:
         return 1
     else:
         return var_n * factorial(var_n - 1)
