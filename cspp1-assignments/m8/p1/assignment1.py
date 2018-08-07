@@ -14,13 +14,13 @@ def factorial(var_n):
         return 1
     elif var_n == 1:
         return 1
-    else:
-        return var_n * factorial(var_n - 1)
+    return var_n * factorial(var_n - 1)
 def main():
     """
     This function is to call the factorial function.
     """
-    var_a = input()
+    var_a = 2333
+    
     print(factorial(int(var_a)))
 if __name__ == "__main__":
     main()
