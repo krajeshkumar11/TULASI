@@ -1,29 +1,24 @@
+"""
 # Exercise: Assignment-2
-# Write a Python function, sumofdigits, that takes in one number and returns the sum of digits of given number.
-
+# Write a Python function, sumofdigits, that takes in one number
+#and returns the sum of digits of given number.
 # This function takes in one number and returns one number.
-
-
+"""
 def sumofdigits(var_n):
     '''
     n is positive Integer
-
     returns: a positive integer, the sum of digits of n.
     '''
     # Your code here
-    i = 0
-    var_b = str(var_n)
-    if i == (len(var_b) - 1):
-        return int(var_b[i])
-    else:
-        return int(var_b[i]) + sumofdigits(int(var_b[(i + 1):]))
-
-
+    while var_n >= 0:
+        if var_n == 0:
+            return 0
+        return (var_n % 10) + sumofdigits(var_n // 10)
 def main():
-    # a = input()
-    a = 234
-    print(sumofdigits(int(a)))  
-
-if __name__== "__main__":
+    """
+    This function is to call the sumofdigits function
+    """
+    var_a = input()
+    print(sumofdigits(int(var_a)))
+if __name__ == "__main__":
     main()
-
