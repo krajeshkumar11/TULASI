@@ -18,8 +18,7 @@ def main():
     """
     This function is to call the sumofdigits function
     """
-    #var_a = input()
-    var_a = 143559
+    var_a = input()
     print(sumofdigits(int(var_a)))
 if __name__ == "__main__":
     main()
