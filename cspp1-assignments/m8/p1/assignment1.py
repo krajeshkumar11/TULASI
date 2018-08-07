@@ -12,8 +12,6 @@ def factorial(var_n):
     '''
     if var_n == 0:
         return 1
-    elif var_n == 1:
-        return 1
     return var_n * factorial(var_n - 1)
 def main():
     """
