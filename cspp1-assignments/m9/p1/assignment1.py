@@ -14,13 +14,11 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    for i in secret_word:
-        print(secret_word)
-        if i in letters_guessed:
-    	    secret_word.replace(i, "")
-    	    print(secret_word)
+    for letter in secret_word:
+        if char in letters_guessed:
+            secret_word.replace(char, "")
     if secret_word == "":
-    	return True
+        return True
     return False
 
 def main():
