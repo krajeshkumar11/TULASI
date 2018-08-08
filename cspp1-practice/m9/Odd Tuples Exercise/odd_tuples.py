@@ -9,13 +9,7 @@ def oddTuples(aTup):
     
     returns: tuple, every other element of aTup. 
     '''
-    bTup = ()
-    i = 0
-    while i < len(aTup):
-    	if i % 2 == 0:
-    		bTup += (aTup[i],)
-    	i = i + 1
-    return (bTup)
+    return aTup[::2]
 
     
 
