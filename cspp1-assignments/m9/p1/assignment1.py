@@ -14,9 +14,9 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    for letter in secret_word:
-        if char in letters_guessed:
-            secret_word.replace(char, "")
+    for i in secret_word:
+        if i in letters_guessed:
+            secret_word.replace(i, "")
     if secret_word == "":
         return True
     return False
