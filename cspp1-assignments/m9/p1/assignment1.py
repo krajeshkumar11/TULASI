@@ -17,8 +17,8 @@ def is_word_guessed(secret_word, letters_guessed):
     count = 0
     for i in secret_word:
         if i in letters_guessed:
-            a = secret_word.replace(i, "#")
-            secret_word = a
+            var_a = secret_word.replace(i, "#")
+            secret_word = var_a
             count += 1
     if count == len(secret_word):
         return True
