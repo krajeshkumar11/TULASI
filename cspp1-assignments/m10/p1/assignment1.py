@@ -17,7 +17,7 @@ def var_getavailableletters(var_lettersguessed):
     for i in var_acopy:
         if i in var_b:
             var_a.remove(i)
-    return ''.join(var_a)
+    return "Available Letters: " + ''.join(var_a)
 def main():
     '''
     Main function for the given program
