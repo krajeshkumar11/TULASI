@@ -8,14 +8,13 @@ def biggest(aDict):
 
     returns: The key with the largest number of values associated with it
     '''
-    values = aDict.values()
     Biggest = 0
-    word = 0
     for k in aDict:
         i = len(aDict[k])
         if Biggest < i:
         	Biggest = i
-    return k
+            temp_k = k
+    return temp_k
     
 #animals = {'a':['animal'],'b':['ba','as'],'c':['a','f','g']}
 #print(biggest(animals))
