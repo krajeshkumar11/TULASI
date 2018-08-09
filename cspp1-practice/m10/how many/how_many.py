@@ -10,12 +10,11 @@ def how_many(aDict):
     '''
     var_c = 0
     for i in aDict:
-        var_b = aDict[i]
-        var_c += len(var_b)
+        var_c += len(aDict[i])
     return var_c
-animals = {'a':['anteater'],'b':['bat'],'c':['cat'],'d':['dog']}
-print(how_many(animals))
-"""def main():
+#animals = {'a':['anteater'],'b':['bat'],'c':['cat'],'d':['dog']}
+#print(how_many(animals))
+def main():
     n=input()
     aDict={}
     for i in range(int(n)):
@@ -30,4 +29,3 @@ print(how_many(animals))
 
 if __name__== "__main__":
     main()
-"""
