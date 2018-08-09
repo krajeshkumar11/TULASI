@@ -5,7 +5,7 @@
 This function returns a string that is comprised of lowercase English letters
  - all lowercase English letters that are not in lettersGuessed
 """
-def getavailableletters(var_lettersguessed):
+def var_getavailableletters(var_lettersguessed):
     '''
     lettersGuessed: list, what letters have been guessed so far
     returns: string, comprised of letters that represents what letters have not
@@ -19,16 +19,14 @@ def getavailableletters(var_lettersguessed):
             var_a.remove(i)
     return ''.join(var_a)
 def main():
-    """
-    This function is to take input and call getavailableletters function.
-    """
-    var_n = input()
-    for i in range(int(var_n)):
-        data = input()
-        var_l = data.split()
-        var_l1 = []
-        for j in var_l:
-            var_l1.append(j[0])
-        print(getavailableletters(var_l1))
+    '''
+    Main function for the given program
+    '''
+    user_input = input()
+    user_input = user_input.split()
+    var_data = []
+    for var_char in user_input:
+        var_data.append(var_char[0])
+    print(var_getavailableletters(var_data))
 if __name__ == "__main__":
     main()
