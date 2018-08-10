@@ -133,9 +133,19 @@ def hangman(secretWord):
             print("You've already used that letter as a guess, try with other guess.")
         e = is_word_guessed(secretWord, letters_guessed)
         if e:
-            return "Congratulations, you won!"
+            print("Congratulations, you won!")
+            f = input("Do you want to repeat the game with new word. Choose y or n: ")
+            if f == "y":
+                return main()
+            else:
+                return "Thank you for playing the game."
         if i == 0 and e == False:
-            return "Sorry you ran out of guesses, the word was " + secretWord
+            print ("Sorry you ran out of guesses, the word was " + secretWord)
+            f = input("Do you want to repeat the game with new word. Choose y or n: ")
+            if f == "y":
+                return main()
+            else:
+                return "Thank you for playing the game."
           
 
 def main():
