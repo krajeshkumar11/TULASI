@@ -50,7 +50,7 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     if arg1 in network:
         del network[arg1]
-    for var_iterable in (network):
+    for var_iterable in network:
         if arg1 in network[var_iterable]:
             network[var_iterable].remove(arg1)
     return network
