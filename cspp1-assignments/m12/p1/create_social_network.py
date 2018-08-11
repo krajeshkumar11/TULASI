@@ -40,7 +40,7 @@ def create_social_network(data):
             var_listofindividual = var_data[var_iterable1].split(" ")
             #print(var_listofindividual)
             var_listofindividuals = var_listofindividual[2].split(",")
-        #print(var_listofindividuals)
+            #print(var_listofindividuals)
             for var_iterable2 in range(len(var_listofindividuals)):
                 if var_listofindividual[0] not in var_adict:
                     var_adict[var_listofindividual[0]] = [var_listofindividuals[0]]
