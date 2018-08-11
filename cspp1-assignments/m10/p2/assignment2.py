@@ -61,6 +61,7 @@ def var_getavailableletters(var_lettersguessed):
         if i in var_b:
             var_a.remove(i)
     return ''.join(var_a)
+
 def get_guessed_word(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
@@ -87,6 +88,7 @@ def is_word_guessed(secret_word, letters_guessed):
         if secret_word == "":
             return True
         return False
+
 def hangman(secretWord):
     '''
     secretWord: string, the secret word to guess.

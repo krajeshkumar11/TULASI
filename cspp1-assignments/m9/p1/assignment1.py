@@ -13,7 +13,7 @@ def is_word_guessed(secret_word, letters_guessed):
     letters_guessed: list, what letters have been guessed so far
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
-    '''
+    
     count = 0
     for i in secret_word:
         for i in letters_guessed:
