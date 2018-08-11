@@ -35,7 +35,7 @@ def create_social_network(data):
     # remove the pass below and start writing your code
     var_data = data.splitlines()
     var_adict = {}
-    if "follows" in var_data:
+    if "follows" in data:
         for var_iterable1 in range(len(var_data)):
             var_listofindividual = var_data[var_iterable1].split(" ")
             #print(var_listofindividual)
