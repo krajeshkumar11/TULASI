@@ -35,17 +35,18 @@ def create_social_network(data):
     # remove the pass below and start writing your code
     var_data = data.splitlines()
     var_adict = {}
-    for var_iterable1 in range(len(var_data)):
-        var_listofindividual = var_data[var_iterable1].split(" ")
-        #print(var_listofindividual)
-        var_listofindividuals = var_listofindividual[2].split(",")
+    if "follows" in var_data:
+        for var_iterable1 in range(len(var_data)):
+            var_listofindividual = var_data[var_iterable1].split(" ")
+            #print(var_listofindividual)
+            var_listofindividuals = var_listofindividual[2].split(",")
         #print(var_listofindividuals)
-        for var_iterable2 in range(len(var_listofindividuals)):
-            if var_listofindividual[0] not in var_adict:
-                var_adict[var_listofindividual[0]] = [var_listofindividuals[0]]
-            else:
-                #print(len(var_listofindividuals))
-                var_adict[var_listofindividual[0]].append(var_listofindividuals[var_iterable2])
+            for var_iterable2 in range(len(var_listofindividuals)):
+                if var_listofindividual[0] not in var_adict:
+                    var_adict[var_listofindividual[0]] = [var_listofindividuals[0]]
+                else:
+                    #print(len(var_listofindividuals))
+                    var_adict[var_listofindividual[0]].append(var_listofindividuals[var_iterable2])
     return var_adict
 
 def main():
